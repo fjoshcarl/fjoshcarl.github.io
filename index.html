@@ -1,37 +1,72 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Josh Francisco">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Josh Francisco</title>
-
-
+    <link rel="icon" href="images/jflogo.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
-
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
-    <link href="style.css" rel="stylesheet">
+    <link href="style.css?v=4" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9ebebcba15.js"></script>
   </head>
-  <body>
-    <header class="startup text-center text-white d-flex">
+
+<body>
+
+    <nav class="nav-top d-flex flex-row p-3">
+      <div class="hamburger d-flex" onclick="mainMenu()">
+        <i class="m-auto fas fa-bars"></i>
+      </div>
+      <div class="d-flex fadeOut" id="active-hamburger">
+        <ul class="m-auto d-flex flex-row font-weight-bold">
+          <li class="mx-3-lg mx-1">
+            <a class="nav-top-link" href="work">WORK</a>
+          </li>
+          <li class="mx-3-lg mx-1">
+            <a class="nav-top-link" href="about">ABOUT</a>
+          </li>
+          <li class="mx-3-lg mx-1">
+            <a class="nav-top-link" href="contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="startup text-center d-flex flex-column">
       <div class="container my-auto">
-        <div class="row">
+        <div class="row mt-3">
+          <div class="col-lg-12 my-2">
+            <img src="images/trees.png" class="piclogo rounded-circle mx-auto d-block h-auto"/>
+          </div>
           <div class="col-lg-12 my-auto">
             <h1 class="text-uppercase faded">
               Josh Francisco
             </h1>
-            <h2 class="text-uppercase faded marg">
-              <strong>A wev developer in the making</strong>
+            <hr style="width:10vw;border-color:var(--color1);border-width:3px"/>
+            <h2 class="faded marg">
+              <strong>Student | Web Developer | Web Designer</strong>
             </h2>
-            <hr>
           </div>
-          <div class="col-lg-12 my-auto">
-            <button class="btn btn-primary btn-xl">Be updated</button>
+
+        </div>
+      </div>
+      <div class="container">
+        <div class=" mb-3">
+          <div class="col-lg-12 mt-auto mb-0">
+            <span class="arrow-down"><i class="fas fa-chevron-down"></i></i></span>
           </div>
         </div>
       </div>
     </header>
 
-  </body>
+    <div style="height:100vh" class="test">
+
+    </div>
+
+  <script src="script.js?v=1>"></script>
+</body>
 
 </html>
