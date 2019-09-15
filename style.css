@@ -43,22 +43,23 @@ ul {
 .fadeIn {
   opacity: 1;
   visibility: visible;
-  transition: .8s;
+  transition: .5s;
 }
 
 .fadeOut {
   opacity: 0;
   visibility: hidden;
-  transition: .8s;
+  transition: .5s;
 }
 
 .rotate-90 {
   transform: rotate(90deg);
-  transition: .8s ease;
+  transition: .5s ease;
 }
 
 .nav-top {
   position: fixed;
+  z-index: 9999;
 }
 
 
