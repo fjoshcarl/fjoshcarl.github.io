@@ -12,6 +12,7 @@ body {
   /*font-family: 'Montserrat', sans-serif*/
   /*font-family: 'Raleway', sans-serif;*/
   /*font-family: 'Roboto Slab', serif;*/
+  /* font-family: 'Pangolin', cursive; */
 }
 
 :root {
@@ -156,6 +157,7 @@ header.startup h2 {
   background-color: var(--color1);
   color: var(--color5);
   height: auto;
+  border-bottom: 10px solid #253031;
 }
 
 .respo-flex {
@@ -175,6 +177,36 @@ header.startup h2 {
   width: 100%;
   color: var(--color1);
 
+
+}
+
+.about-row{
+  height:100vh;
+  background-color:var(--color5);
+  background-image:url('images/scannerboi.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+
+}
+
+.about-col {
+  color: var(--color1);
+}
+
+.about-col h1{
+  margin-right: 30%;
+  text-align: right;
+  text-shadow: 1px 2px 3px #171918;
+  font-family: 'Pangolin', cursive;
+  word-wrap: break-word;
+}
+
+.about-col p{
+  text-align: right;
+  font-size: 20px;
+  text-shadow: 1px 2px 3px #171918;
+  font-family: 'Montserrat', sans-serif
+  word-wrap: break-word;
 
 }
 
@@ -252,7 +284,7 @@ header.startup h2 {
 @media only screen and (min-width: 992px) {
   .jflex {
     filter: brightness(40%);
-    transition: 1s;
+    transition: 1s ease;
   }
 
   .jflex-child {
@@ -263,6 +295,20 @@ header.startup h2 {
 
   .jflex:hover {
     filter: brightness(100%);
+  }
+
+  .about-row{
+    background-size: cover;
+  }
+
+  .about-col h1{
+    margin-left: 50%;
+    width: 500px;
+  }
+
+  .about-col p{
+    margin-left: 50%;
+    width: 500px;
   }
 }
 
