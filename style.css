@@ -186,7 +186,7 @@ header.startup h2 {
 }
 
 .about-row{
-  height:100vh;
+  height:110vh;
   background-color:var(--color5);
   background-image:url('images/scannerboi.jpg');
   background-repeat:no-repeat;
@@ -218,7 +218,7 @@ header.startup h2 {
 
 .contact {
   background-color: var(--color3);
-  height: 50vh;
+  height: 80vh;
   min-height: 300px;
 }
 
