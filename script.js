@@ -25,6 +25,11 @@ function scrollArrow() {
   });
 }
 
+var Parallax = document.querySelector(".about-row");
+window.addEventListener('scroll', function() {
+    var offset = window.pageYOffset;
+    Parallax.style.backgroundPositionY = offset * 0.14 + "px";
+})
 
 var typed = new Typed("#typewriter", {
   strings: ["", "Web Developer ^1650", "Web Designer ^1650", "Student ^1650", "Web Developer | Web Designer | Student "],

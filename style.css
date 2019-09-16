@@ -24,6 +24,11 @@ body {
   --color6: rgba(102, 102, 110, 1);
 }
 
+::selection {
+  background-color: var(--color4);
+  color: var(--color1);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -186,6 +191,7 @@ header.startup h2 {
   background-image:url('images/scannerboi.jpg');
   background-repeat:no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 
 }
 
@@ -210,10 +216,58 @@ header.startup h2 {
 
 }
 
+.contact {
+  background-color: var(--color3);
+  height: 50vh;
+  min-height: 300px;
+}
+
+.contact a {
+  color: var(--color1);
+  font-size: 14px;
+  transition: .8s;
+}
+
+.contact a:hover {
+  color: var(--color2);
+}
+
+footer {
+  background-color: var(--color3);
+  height: 30vh;
+  min-height: 200px;
+}
+
+.footer-icons {
+  font-size: 40px;
+}
+
+.footer-icons a:hover {
+  color: var(--color1);
+  position: relative;
+  animation: footericon .5s;
+}
+
+.footer-icons a {
+  color: var(--color6);
+  transition: .5s ease;
+}
+
+.cc {
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif
+}
+
 @keyframes bouncearrow {
   0%{top: 0px;}
-  50%{top: 15px;}
+  50%{top: 5px;}
   100%{top: 0px;}
+}
+
+@keyframes footericon {
+  0%{bottom: 0px;}
+  50%{bottom: 5px;}
+  100%{bottom: 0px;}
 }
 
 /* Extra small devices (portrait phones, less than 576px)*/
