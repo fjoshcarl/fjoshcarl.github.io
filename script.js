@@ -17,6 +17,15 @@ function mainMenu() {
   }
 }
 
+function scrollArrow() {
+  var y = document.querySelector('#works').getBoundingClientRect().top + window.scrollY;
+  window.scroll({
+    top: y,
+    behavior: 'smooth'
+  });
+}
+
+
 var typed = new Typed("#typewriter", {
   strings: ["", "Web Developer ^1650", "Web Designer ^1650", "Student ^1650", "Web Developer | Web Designer | Student "],
   typeSpeed: 50,

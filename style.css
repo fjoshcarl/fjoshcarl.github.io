@@ -70,9 +70,8 @@ ul {
 }
 
 .nav-top-link:hover {
-  transform: scale(1.2);
   color: var(--color2);
-
+  padding 0 10px;
 }
 
 .hamburger {
@@ -138,6 +137,45 @@ header.startup h2 {
   color: var(--color1);
   animation: bouncearrow 1.5s infinite;
   position: relative;
+  cursor: pointer;
+}
+
+/* .grids {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: auto;
+}
+
+.grids-card {
+  height: 300px;
+
+  background-color: yellow;
+} */
+
+.projects {
+  background-color: var(--color1);
+  color: var(--color5);
+  height: auto;
+}
+
+.respo-flex {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.jflex {
+  flex: 50%;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+}
+
+.jflex-child {
+  width: 100%;
+  color: var(--color1);
+
+
 }
 
 @keyframes bouncearrow {
@@ -148,10 +186,20 @@ header.startup h2 {
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media only (max-width: 575.98px) {
+
+
 }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media only screen and (max-width: 767.98px) {
+  .respo-flex {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .jflex {
+    flex: 100%;
+  }
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -172,13 +220,55 @@ header.startup h2 {
   header.startup h2 {
     font-size: 16px;
   }
+
+  /* .grids {
+    grid-template-columns: 1fr;
+  }
+
+  .grids-card {
+    height: 400px;
+  } */
+
+  .jflex {
+    height: 450px;
+  }
+
+  .jflex-child {
+    height: 100%;
+  }
+
+  .jflex-child h3, .jflex-child h6 {
+    background-color: rgba(23, 25, 24, 0.85);
+    width: 100%;
+  }
+
+  .jflex {
+    filter: brightness(100%);
+  }
+
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media only screen and (min-width: 992px) {
+  .jflex {
+    filter: brightness(40%);
+    transition: 1s;
+  }
+
+  .jflex-child {
+    height: 100px;
+    overflow: hidden;
+    background-color: rgba(23, 25, 24, 0.85);
+  }
+
+  .jflex:hover {
+    filter: brightness(100%);
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+  /* .grids-card {
+    height: 450px;
+  } */
 }

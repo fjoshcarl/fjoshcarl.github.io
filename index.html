@@ -23,19 +23,19 @@
       <div class="d-flex fadeOut" id="active-hamburger">
         <ul class="m-auto d-flex flex-row font-weight-bold">
           <li class="mx-3-lg mx-1">
-            <a class="nav-top-link" href="works">WORKS</a>
+            <a class="nav-top-link" href="#works">WORKS</a>
           </li>
           <li class="mx-3-lg mx-1">
-            <a class="nav-top-link" href="about">ABOUT</a>
+            <a class="nav-top-link" href="#about">ABOUT</a>
           </li>
           <li class="mx-3-lg mx-1">
-            <a class="nav-top-link" href="contact">CONTACT</a>
+            <a class="nav-top-link" href="#contact">CONTACT</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <header class="startup text-center d-flex flex-column">
+    <header class="startup text-center d-flex flex-column pb-5">
       <div class="container my-auto">
         <div class="row mt-3">
           <div class="col-lg-12 my-2">
@@ -49,26 +49,56 @@
             <h2 class="faded marg">
               <strong>
               <span id="typewriter">
-
               </span> <!--&lt;&#47;span&gt;-->
               </strong>
             </h2>
           </div>
-
         </div>
       </div>
       <div class="container">
-        <div class=" mb-3">
+        <div class="row">
           <div class="col-lg-12 mt-auto mb-0">
-            <span class="arrow-down"><i class="fas fa-chevron-down"></i></i></span>
+            <span class="arrow-down"><i class="fas fa-chevron-down" onclick="scrollArrow()"></i></i></span>
           </div>
         </div>
       </div>
     </header>
 
-    <div style="height:100vh" class="container">
+      <div class="projects text-center" id="works">
+
+        <!-- <div class="row grids">
+          <div class="grids-card">
+            test1
+          </div>
+          <div class="grids-card">
+            test2
+          </div>
+        </div> -->
+
+        <div class="respo-flex text-left">
+
+          <a href="http://goldenbloomorchids.000webhostapp.com/" class="jflex d-flex flex-column justify-content-end align-items-end" style="background-image: url('images/gbo_ss.png');background-color:#f8f4e3;">
+            <div class="jflex-child p-2 d-flex flex-column justify-content-end align-items-end">
+              <h3 class="jflex-child-title text-right">Golden Bloom Orchids</h3>
+              <h6 class="text-right">E-commerce website for an actual orchid business in Bulacan developed as a capstone project.</h6>
+            </div>
+          </a>
+
+          <a href="http://blitzkriegph.epizy.com/" class="jflex d-flex flex-column justify-content-end align-items-end" style="background-image: url('images/blitz_ss.png');background-color:#2a080a;">
+            <div class="jflex-child p-2 d-flex flex-column justify-content-end align-items-end">
+              <h3 class="jflex-child-title text-right">Blitzkrieg</h3>
+              <h6 class="text-right">Early attempt at full-stack e-commerce development.</h6>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+
+    <div class="container-fluid" style="height:100vh;background-color:blue">
 
     </div>
+
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
   <script src="script.js?v=3>"></script>
 </body>
