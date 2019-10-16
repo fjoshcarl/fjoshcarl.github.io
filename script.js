@@ -18,7 +18,7 @@ function mainMenu() {
 }
 
 function scrollArrow() {
-  var y = document.querySelector('#works').getBoundingClientRect().top + window.scrollY;
+  var y = document.querySelector('#portfolio').getBoundingClientRect().top + window.scrollY;
   window.scroll({
     top: y,
     behavior: 'smooth'
