@@ -32,7 +32,7 @@ window.addEventListener('scroll', function() {
 })
 
 var typed = new Typed("#typewriter", {
-  strings: ["", "Web Developer ^1650", "Web Designer ^1650", "Student ^1650", "Web Developer | Web Designer | Student "],
+  strings: ["", "Web Developer ^1650", "Web Designer ^1650", "Student ^1650", "Web Developer | Web Designer"],
   typeSpeed: 50,
   backSpeed: 60,
   startDelay: 500,
